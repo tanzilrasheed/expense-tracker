@@ -90,9 +90,14 @@ const App = () => {
                 <div>
                     Balance
                     <button onClick={() => {
-                        let addedBalance = Number(prompt('Enter amount to add')) + Number(balance);
-                        localStorage.setItem('balance', addedBalance);
-                        setBalance(addedBalance);
+                        let addedBalance = Number(prompt('Enter amount to add'))
+                        if (isNaN(Number(addedBalance))) {
+                            alert('Enter a valid number, please.');
+                        }
+                        else {
+                            localStorage.setItem('balance', addedBalance + Number(balance));
+                            setBalance(addedBalance + Number(balance));
+                        }
                     }}>add</button>
                 </div>
                 <p id='balanceAmt'>₹{balance}</p>

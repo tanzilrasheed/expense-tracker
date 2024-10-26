@@ -1,0 +1,27 @@
+.form > *{
+    margin: 15px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: black;
+}
+
+
+.closeButton {
+    width: fit-content;
+    align-self: flex-end;
+    margin: 0px;
+    background-color: red;
+    color: white;
+}
+
+.addBtn {
+    margin: 0 auto;
+    display: block;
+    border: none;
+    color: white;
+    background-color: rgb(90, 30, 210);
+}

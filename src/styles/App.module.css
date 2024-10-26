@@ -1,0 +1,61 @@
+.formContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+
+
+.mainContent {
+    height: 100%;
+    width: 100%;
+}
+
+
+.form {
+    border: solid;
+    width: fit-content;
+    background-color: aqua;
+    position: fixed;
+}
+
+
+.heading {
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+
+.balanceContainer {
+    padding: 0 30%;
+}
+
+.balanceContainer > div {
+    display: flex;
+}
+
+
+.expenseDiv {
+    display: flex;
+    justify-content: end;
+}
+
+.expenseDiv > div {
+    width: fit-content;
+    text-align: left;
+}
+
+.expenseValue {
+    display: block;
+}
+
+
+@media screen and (max-width: 550px) {
+    .balanceContainer button {
+        font-size: 10px;
+    }
+}

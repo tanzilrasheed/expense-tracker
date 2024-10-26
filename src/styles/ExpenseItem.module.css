@@ -1,0 +1,42 @@
+.item {
+    border: solid;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.itemText {
+    display: flex;
+    justify-content: space-evenly;
+    width: 94%;
+}
+
+.itemText > div {
+    width: 25%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid rgb(137, 131, 131) 1px;
+}
+
+.itemContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.itemButtonContainer {
+    display: flex;
+    width: fit-content;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 550px) {
+    body {
+        font-size: 11px;
+    }
+
+  .itemText > div {
+    width: 25%;
+    }
+}

@@ -1,0 +1,32 @@
+.heading {
+    display: flex;
+}
+
+
+.headingDivContainer {
+    background-color: rgb(56, 129, 212);
+    width: 100%;
+    position: sticky;
+    top: 0px;
+}
+
+.heading > div{
+    text-align: center;
+    width: 25%;
+    border-left: solid;
+    border-right: solid;
+}
+
+.listContainer {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    overflow-y: scroll;
+    border: solid;
+}
+
+@media screen and (max-width: 550px) {
+    .listContainer {
+        width: 90%;
+    }
+}

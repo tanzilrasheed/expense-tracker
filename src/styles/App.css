@@ -1,0 +1,32 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 95vh;
+    background: linear-gradient(to right, black, rgb(86, 109, 50), black);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: blanchedalmond;
+}
+
+
+
+#root {
+    height: 100%;
+}
+
+#listContainer {
+    height: 50%;
+    text-align: right;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 550px) {
+    #listContainer {
+        width: 100%;
+    }    
+    button {
+        font-size: 11px;
+    }
+}

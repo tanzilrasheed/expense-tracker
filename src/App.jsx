@@ -12,7 +12,7 @@ const App = () => {
     const [isEditFormVisible, setEditFormVisible] = useState(false);
     const [editDataIndex, setEditDataIndex] = useState(null);     // data to pass to EditExpenseData to change the data
     const [totalExpense, setTotalExpense] = useState(localStorage.getItem('totalExpense') ? localStorage.getItem('totalExpense'): 0);
-    const [balance, setBalance] = useState((localStorage.getItem('balance')) ? localStorage.getItem('balance'): 0);
+    const [balance, setBalance] = useState((localStorage.getItem('balance')) || localStorage.getItem === 'NaN' ? localStorage.getItem('balance'): 0);
     return (
         <>
         {isEditFormVisible && 
